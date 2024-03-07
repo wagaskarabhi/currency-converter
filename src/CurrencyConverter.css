@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+h1 {
+  font-family: Major Mono Display;
+  color: rgb(240, 255, 240);
+}
+label {
+  font-family: "Mochiy Pop One", sans-serif;
+  color: #fef6ff;
+}
+
+.currency-converter {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.1);
+}
+
+.input-container,
+.currency-selector,
+.result {
+  margin-bottom: 15px;
+  box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.1);
+}
+
+.amount-input,
+.currency-select {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 2px solid black;
+
+  border-radius: 4px;
+  box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.1);
+}
+
+.switch-icon {
+  color: aliceblue;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+  cursor: pointer;
+  display: flex; /* Use flexbox to align items */
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  width: 50px; /* Set the width of the circle */
+  height: 50px; /* Set the height of the circle */
+  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  border: 2px solid black;
+  /* Add a border to the circle */
+}
+
+.result {
+  font-family: "Josefin Sans", sans-serif;
+  color: aliceblue;
+  align-items: center;
+  margin-top: 15px;
+  border: 2px solid black;
+
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .currency-converter {
+    max-width: 100%;
+  }
+}
+
+/* Additional styles for responsiveness and aesthetics */
